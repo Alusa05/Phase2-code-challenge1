@@ -13,10 +13,12 @@ const ExpenseTable = ({ expenses}) => {
                 {expenses.map((expense,index)=>(
                     <tr key={index}>
                         <td>{expense.description}</td>
-                        
+                        <td>{expense.amount}</td>
                     </tr>
                 ))}
             </tbody>
         </table>
-    )
-}
+    );
+};
+
+export default ExpenseTable;

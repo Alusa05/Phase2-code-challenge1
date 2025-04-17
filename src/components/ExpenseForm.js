@@ -18,6 +18,18 @@ const handleSubmit = (e) => {
         type="text"
         placeholder="Description"
         value={description}
-        onC
- )
+        onChange={(e) => setDescription(e.target.value)}
+        required
+        />
+        <input
+        type="number"
+        placeholder="Amount"
+        value={amount}
+        onChange={(e)=> setAmount(e.target.value)}
+        required
+        />
+        <button type="submit">Add Expense</button>
+    </form>
+ );
 };
+export default ExpenseForm;
